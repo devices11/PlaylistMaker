@@ -1,19 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:background="@color/main_background"
+    android:orientation="vertical"
+    android:paddingHorizontal="@dimen/screen_padding_horizontal"
+    android:paddingBottom="28dp">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <include
+        android:id="@+id/header"
+        layout="@layout/panel_header"
+        android:layout_width="match_parent"
+        android:layout_marginStart="@dimen/screen_padding_horizontal_negative"
+        android:layout_height="@dimen/header_height" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_search"
+        style="@style/Widget.PlaylistMaker.Button.Big"
+        android:layout_marginTop="@dimen/screen_content_margin_top"
+        android:text="@string/search"
+        app:icon="@drawable/ic_search_24" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_media"
+        style="@style/Widget.PlaylistMaker.Button.Big"
+        android:layout_marginTop="@dimen/main_button_spacing"
+        android:text="@string/media"
+        app:icon="@drawable/ic_library_24" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_settings"
+        style="@style/Widget.PlaylistMaker.Button.Big"
+        android:layout_marginTop="@dimen/main_button_spacing"
+        android:text="@string/settings"
+        app:icon="@drawable/ic_settings_24" />
+</LinearLayout>
