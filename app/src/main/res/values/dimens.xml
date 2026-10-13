@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Шапка -->
+    <dimen name="header_height">56dp</dimen>
+    <dimen name="header_title_text_size">22sp</dimen>
+
+    <!-- Экраны -->
+    <dimen name="screen_padding_horizontal">16dp</dimen>
+    <dimen name="screen_content_margin_top">24dp</dimen>
+    <dimen name="screen_padding_horizontal_negative">-16dp</dimen>
+
+    <!-- Главный экран -->
+    <dimen name="main_button_spacing">16dp</dimen>
+    <dimen name="main_button_text_size">22sp</dimen>
+
+    <!-- Настройки -->
+    <dimen name="settings_item_text_size">16sp</dimen>
+</resources>
