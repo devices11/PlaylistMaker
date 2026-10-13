@@ -27,7 +27,7 @@
         android:id="@+id/btn_media"
         style="@style/Widget.PlaylistMaker.Button.Big"
         android:layout_marginTop="@dimen/main_button_spacing"
-        android:text="@string/media"
+        android:text="@string/media_library"
         app:icon="@drawable/ic_library_24" />
 
     <com.google.android.material.button.MaterialButton
